@@ -1,0 +1,9 @@
+# IDE
+.vscode/
+
+# Dependencies
+node_modules/
+
+# Build
+public/app.js
+public/sw.js

@@ -1,0 +1,26 @@
+{
+  "name": "shotwatch",
+  "version": "0.1.0",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run server.ts",
+    "dev": "bun build ./src/app.tsx ./src/sw.ts --outdir=public --watch",
+    "compile": "bun build ./src/app.tsx ./src/sw.ts --outdir=public",
+    "set-version": "bun run set-version.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/materialize-css": "^1.0.14"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "materialize-css": "1.0.0",
+    "preact": "^10.26.9",
+    "preact-iso": "^2.9.2",
+    "smoothie": "^1.36.1"
+  }
+}
