@@ -28,6 +28,8 @@ const Configuration = () => {
     <div className="default-layout" style={{ gap: "1rem" }}>
       <h4>Configuration</h4>
 
+      <h5>Targets</h5>
+
       <div className="row config-row">
         <p className="col s6">
           <label>
@@ -169,13 +171,7 @@ const Configuration = () => {
         </div>
       </div>
 
-      <span
-        style={{
-          width: "100%",
-          margin: "1rem 0",
-          borderBottom: "solid 1px var(--grey-lighten-2)",
-        }}
-      />
+      <h5>Session Naming</h5>
 
       <div className="row config-row">
         <p className="col s12">
