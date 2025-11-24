@@ -39,9 +39,10 @@ const buildCsv = (entries: SessionEntry[]): string => {
   entries.map((e) => {
     const dateTime = formatLocalDateTime(new Date(e.startTime!));
     const name = e.name || "<unnamed>";
-    const targets = `${e.targets.shots} shots, ${e.targets.time?.toFixed(
-      2
-    )} sec, ${e.targets.marks} marks`;
+    const shots = e.targets.shots ?? 0;
+    const time = (e.targets.time ?? 0).toFixed(2);
+    const marks = e.targets.marks ?? 0;
+    const targets = `${shots} shots, ${time} sec, ${marks} marks`;
     rows.push([dateTime, name, targets]);
 
     e.events.map((ev, i) => {
