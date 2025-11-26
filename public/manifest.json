@@ -1,7 +1,7 @@
 {
   "name": "ShotWatch",
   "short_name": "ShotWatch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple, free, open-source shot timer.",
   "categories": ["sports", "utilities"],
   "start_url": "/",
